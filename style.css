@@ -1,0 +1,273 @@
+/* Reset margins and padding, set default font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+     box-sizing: border-box;
+    overflow-x: hidden;
+} 
+body {
+    overflow-x: hidden; 
+}
+.nav-bar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    padding: 10px 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+/*  Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.logo-img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
+}
+/* Navigation bar text styling */
+.nav-bar p {
+    color: whitesmoke;
+    margin-right: auto; 
+    font-size: 20px;
+}
+/* Navigation links styling */
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+main {
+    background-color: #8a3f7f;
+    height: 770px;
+}
+.intro-text {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.internship-info {
+    margin-top: 30px;
+    color: whitesmoke;
+    padding: 20px;
+    background-color: #44013a;
+    border-radius: 10px;
+}
+.internship-info p {
+    margin: 10px 0;
+}
+
+.internship-info ol {
+    margin-left: 20px;
+}
+
+.internship-info ol li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+.available-positions {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.available-positions img {
+    width: 180px; 
+    height: 180px; 
+    margin-right: 20px; 
+}
+.available-positions ol {
+    margin: 0;
+    padding: 0;
+    list-style: inside; 
+}
+
+.available-positions ol li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(to right, #CACACA ,#8a3f7f);
+    
+}
+
+section:nth-child(even) {
+  
+   
+    background: linear-gradient(to right, #44013a, #CACACA);
+}
+
+h1 { 
+    padding-top: 150px;
+    padding-bottom: 20px;
+    padding-left: 430px;
+    color:whitesmoke;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Input field styling */
+input {
+    width: 400px;
+    padding: 15px 0px 10px 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid #070A52;
+    background-color: whitesmoke;
+}
+
+#s1 {
+    width: 80px;
+    padding: 15px 0px 10px 0px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid #7c0162;
+    background-color: whitesmoke;
+} 
+
+.moving-text {
+    background-color: #44023a; 
+    color: whitesmoke; 
+    padding: 10px 10px; 
+    font-size: 17px; 
+    text-align: center;
+    font-weight: lighter; 
+    border-radius: 0px; 
+    margin: 20px auto; 
+    max-width: 100%; 
+    animation: scroll 7s linear infinite; 
+}
+
+
+@keyframes scroll {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+} 
+
+/* media queries */
+/* Media queries for responsive design */
+      @media (max-width: 700px) {
+    .nav-bar {
+        padding: 1px;
+        width: 100%;
+    }
+    .nav-bar p {
+        font-size: 12px;
+    }
+    .nav-bar a {
+        font-size: 10px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+    h1 {
+        padding-top: 130px;
+        padding-bottom: 10px;
+        padding-left: 170px;
+    }
+    
+    #search {
+        align-items: center;
+    }
+    main {
+        height: 400px;
+    }
+    input {
+        width: 200px;
+        padding: 10px 0px 10px 10px;
+    }
+    #s1 {
+        width: 100px;
+        padding: 100px 0px 100px 0px;
+    }
+    section {
+        font-size: 50px;
+    }
+    .intro-text {
+        font-size: 14px;
+    }
+    .internship-info {
+        padding: 10px;
+    }
+    .internship-info p {
+        font-size: 14px;
+    }
+    .available-positions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .available-positions img {
+        margin-bottom: 10px;
+    }
+    .available-positions ol li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-bar {
+        padding: 1px;
+        width: 100%;
+    }
+    .nav-bar p {
+        font-size: 5px;
+    }
+    .nav-bar a {
+        font-size: 5px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+    h1 {
+        padding-top: 130px;
+        padding-bottom: 10px;
+        padding-left: 80px;
+    }
+  
+    section {
+        font-size: 30px;
+    }
+    .intro-text {
+        font-size: 12px;
+    }
+    .internship-info {
+        padding: 10px;
+    }
+    .internship-info p {
+        font-size: 12px;
+    }
+    .available-positions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .available-positions img {
+        margin-bottom: 10px;
+    }
+    .available-positions ol li {
+        font-size: 12px;
+    }
+}
+
+ 
+
